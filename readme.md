@@ -40,6 +40,6 @@ To learn more about building themes in Hugo, refer to Hugo's [templating documen
 
 ## License
 
-This code is free to use under the [MIT license](https://github.com/rabbarbaro/sidera/LICENSE) attached.
+This code is free to use under the [MIT license](https://github.com/rabbarbaro/sidera/blob/main/LICENSE) attached.
 
 ## Per aspera ad astra
