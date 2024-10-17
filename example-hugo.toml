@@ -1,0 +1,104 @@
+# Configure with your on data
+
+baseURL = 'https://example.com/'
+languageCode = 'en'
+title = 'example'
+theme = 'sidera'
+enableEmoji = true
+
+# Support for multiple languages
+# Edit menus from here and add localisation for some terms
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+
+    [[languages.en.menu.main]]
+      identifier = "posts"
+      name = "Posts"
+      url = "/posts"
+      weight = 10
+    
+    [[languages.en.menu.main]]
+      identifier = "projects"
+      name = "Projects"
+      url = "/projects"
+      weight = 20
+
+    [[languages.en.menu.main]]
+      identifier = "contact"
+      name = "Contact"
+      url = "/contact"
+      weight = 30
+    
+    [[languages.en.menu.social]]
+    name = "GitHub"
+    pre = "github"
+    url = "https://github.com/rabbarbaro"
+    weight = 10
+
+    [[languages.en.menu.social]]
+      name = "Linkedin"
+      pre = "linkedin"
+      url = "https://example.com/"
+      weight = 20
+
+    [[languages.en.menu.social]]
+      name = "Mail"
+      pre = "mail"
+      url = "mailto:example@example.com"
+      weight = 30
+
+    [[languages.en.menu.social]]
+      name = "RSS Feed"
+      pre = "rss"
+      url = "/index.xml"
+      weight = 40
+
+  [languages.XX]
+    languageName = "XX"
+    weight = 2
+
+    [[languages.XX.menu.main]]
+      identifier = "posts"
+      name = "XXXX"
+      url = "/XX/posts"
+      weight = 10
+
+    [[languages.XX.menu.main]]
+      identifier = "projects"
+      name = "XXXX"
+      url = "/XX/projects"
+      weight = 20
+
+    [[languages.XX.menu.main]]
+      identifier = "contact"
+      name = "XXXX"
+      url = "/XX/contact"
+      weight = 30
+    
+    [[languages.XX.menu.social]]
+    name = "GitHub"
+    pre = "github"
+    url = "https://github.com/rabbarbaro"
+    weight = 10
+
+    [[languages.XX.menu.social]]
+      name = "Linkedin"
+      pre = "linkedin"
+      url = "https://example.com/"
+      weight = 20
+
+    [[languages.XX.menu.social]]
+      name = "Mail"
+      pre = "mail"
+      url = "mailto:example@example.com"
+      weight = 30
+
+    [[languages.XX.menu.social]]
+      name = "RSS Feed"
+      pre = "rss"
+      url = "/index.xml"
+      weight = 40
+  

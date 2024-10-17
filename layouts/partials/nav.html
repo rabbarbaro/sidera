@@ -1,0 +1,47 @@
+<header class="site-header">
+  <nav class="site-nav">
+
+    <!-- Logo with avatar -->
+    <a class="logo" href="/{{.Lang }}">
+      <img class="nav-avatar" src="/images/avatar-small.jpg" alt="avatar-small">
+      {{ .Site.Title }}
+    </a>
+
+    <!-- Main menu desktop -->
+    <ul class="main-menu">
+      {{ range.Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+
+    <!-- Switch language -->
+    <div class="language-switch">
+      {{ if .IsTranslated -}}
+      {{ range .Translations }}
+        <a rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ partial "icon.html" (dict "icon" .Lang "title" .Name ) }}</a>
+      {{ end -}}
+      {{ else -}}
+      {{ range .Site.Languages -}}
+      {{ if ne $.Site.Language.Lang .Lang }}
+        <a rel="alternate" href="{{ .Lang | relURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ partial "icon.html" (dict "icon" .Lang "title" .LanguageName ) }}</a>
+      {{ end -}}
+      {{ end -}}
+      {{ end -}}
+    </div>
+
+    <!-- Mobile menu and hamburger -->
+    <input type="checkbox" id="mobile-menu-open">
+    <label for="mobile-menu-open" class="mobile-menu-open-button"><span class="hamb-line"></span></label>
+    <ul class="mobile-menu">
+      {{ range.Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    <!-- Overlay for quitting mobile menu -->
+    <label id="overlay" for="mobile-menu-open"></label>
+  </nav>
+</header>

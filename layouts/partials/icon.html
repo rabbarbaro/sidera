@@ -1,0 +1,4 @@
+{{- $fname:=print "/assets/icons/" .icon ".svg" -}}
+{{- $svg := readFile $fname -}}
+{{- $titledSvg := replaceRE "<svg (.*?)>" (printf `<svg role="img" width="28" height="28" $1 ><title>%s</title>` .title) $svg -}}
+{{ $titledSvg | safeHTML }}

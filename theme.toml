@@ -1,0 +1,10 @@
+name = 'Sidera'
+license = 'MIT'
+licenselink = 'https://github.com/rabbarbaro/sidera/LICENSE'
+description = 'Simple customizable theme with dark mode, multilingual support and no JS'
+
+homepage = 'https://github.com/rabbarbaro/sidera'
+
+[author]
+  name = 'Alessandro Barbieri'
+  homepage = 'alessandro-barbieri.com'
