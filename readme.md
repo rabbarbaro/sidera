@@ -42,4 +42,4 @@ To learn more about building themes in Hugo, refer to Hugo's [templating documen
 
 This code is free to use under the [MIT license](https://github.com/rabbarbaro/sidera/blob/main/LICENSE) attached.
 
-## Per aspera ad astra
+> Per aspera ad astra
